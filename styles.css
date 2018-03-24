@@ -1,0 +1,756 @@
+﻿/*------Общие стили-----*/
+@font-face {
+    font-family: "MyAmble";
+    src: url("fonts/Amble-Light.ttf");
+}
+@font-face {
+    font-family: "MyAmbleBold";
+    src: url("fonts/Amble-Bold.ttf");
+}
+body{
+    margin: 0;
+    font-family: MyAmble, MyAmbleBold, Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    font-style: italic;
+}
+header{
+    width: 100%;
+}
+section{
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    width: 100%;
+    clear: left;
+}
+/*-----Стили для header-----*/
+#header_top{
+    font-size: 0.85em;
+    font-weight: 100;
+    letter-spacing: 0;
+    width: 100%;
+    height: 45px;
+    background: rgb(41, 202, 240);
+}
+#header_bottom{
+    color: rgb(150, 149, 149);
+    width: 100%;
+    height: 108px;
+}
+#banner{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+/*------Стили для header_top------*/
+#header_top div{
+    margin-left: 10px;
+    float: left;
+    color: white;
+}
+#header_top p{
+    margin-top: 12px;
+    color: rgb(205, 249, 255);
+}
+#header_top div:first-child{
+    margin-left: 12%;
+}
+#header_top select{
+    margin-top: 0;
+    background: rgb(41, 202, 240);
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+#header_top select{
+    font-family: MyAmble;
+}
+#header_top ul{
+    padding-left: 0;
+    margin-top: 15px;
+    float: right;
+    margin-right: 12%;
+}
+#header_top ul :last-child{
+    border: none;
+}
+#header_top li{
+    display: block;
+    float: left;
+    border-right: solid 1px white;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    height: 12px;
+}
+#header_top a{
+    color: white;
+    display: block;
+    margin-top: -3px;
+}
+/*------Стили для header_bottom------*/
+#header_bottom{
+    font-family: MyAmbleBold;
+}
+#header_bottom h1, #header_bottom ul, #header_bottom div, #header_bottom form, #header_bottom div a, #header_bottom div p{
+    float: left;
+}
+#header_bottom h1{
+    margin-top: 34px;
+    margin-left: 13%;
+    font-size: 2.4em;
+    clear: left;
+}
+#header_bottom ul{
+    padding-left: 0;
+    margin-left: 4.3%;
+    margin-top: 46px;
+}
+#header_bottom li{
+    display: block;
+    float: left;
+    margin-left: 16px;
+    height: 12px;
+}
+#header_bottom ul a{
+    font-family: arial;
+    font-weight: 700;
+    font-size: 0.9em;
+    color: rgb(150, 149, 149);
+}
+#header_bottom ul a:hover{
+    color: black;
+    font-style: normal;
+}
+#header_bottom div{
+    margin-left: 8.2%;
+    margin-top: 36px;
+}
+#header_bottom form{
+    border: solid 1px rgb(236, 234, 234);
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+#header_bottom input[type=search]{
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+#header_bottom input[type=submit]{
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    background: url("images/search.png") no-repeat;
+}
+#header_bottom div a{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-left: 4px;
+    margin-top: 0;
+}
+#header_bottom a#basket{
+    background: url("images/basket.png") no-repeat;
+}
+#header_bottom a#basket:hover{
+    background: url("images/basket_hover.png") no-repeat;
+}
+#header_bottom div a#ellips{
+    background: url("images/ellips.png") no-repeat;
+}
+#header_bottom div a#ellips:hover{
+    background: url("images/ellips_hover.png") no-repeat;
+}
+#header_bottom p{
+    display: block;
+    margin-left: 13px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+/*-----Стили для banner-----*/
+#banner{
+    border-top: solid 1px white;
+    height: 475px;
+    position: relative;
+}
+#banner .banner_back{
+    display: none;
+    background-position: top left;
+    width: 0;
+    height: 475px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+	background-size: cover;	
+}
+#banner #banner_back_1{
+    left: 0;
+    display: block;
+	width: 100%;
+    background: url("images/banner_normal.png") 100% 100% no-repeat;
+	background-size: cover;
+	background-position: top right;
+}
+#banner #banner_back_2{
+    background: url("images/banner_2.png") 100% 100% no-repeat;
+	background-size: 100% 100%;	
+}
+#banner #banner_back_3{
+    background: url("images/banner_3.png") 100% 100% no-repeat;
+	background-size: 100% 100%;	
+}
+#banner #banner_back_4{
+    background: url("images/banner_4.png") 100% 100% no-repeat;
+	background-size: 100% 100%;	
+}
+#banner #banner_back_5{
+    background: url("images/banner_5.png") 100% 100% no-repeat;
+	background-size: 100% 100%;	
+}
+#banner #banner_back_6{
+    background: url("images/banner_6.png") 100% 100% no-repeat;
+	background-size: 100% 100%;	
+}
+#banner #banner_back_7{
+    background: url("images/banner_7.png") 100% 100% no-repeat;
+	background-size: 100% 100%;	
+}
+#banner #banner_back_8{
+    background: url("images/banner_8.png") 100% 100% no-repeat;
+	background-size: 100% 100%;	
+}
+#banner #banner_back_9{
+    background: url("images/banner_9.png") 100% 100% no-repeat;
+	background-size: 100% 100%;	
+}
+#banner a{
+    position: absolute;
+    z-index: 2;
+    width: 67px;
+    height: 67px;
+    top: 180px;
+    border-radius: 40px;
+}
+header #banner a[name]:hover{
+    opacity: 0.5;
+}
+#banner a[name="left"]{
+    left: 8.5%;
+    background: url("images/left.png") no-repeat;
+}
+#banner a[name="right"]{
+    right: 8.5%;
+    background: url("images/right.png") no-repeat;
+}
+#banner a[name="left"]:hover{
+    background: url("images/left_hover.png") no-repeat;
+}
+#banner a[name="right"]:hover{
+    background: url("images/right_hover.png") no-repeat;
+}
+#banner div#presentation{
+    position: absolute;
+    z-index: 2;
+    width: 347px;
+    height: 112px;
+    left: 17%;
+    top: 157px;
+}
+#banner p{
+    color: white;
+    background: rgba(119, 114, 114, 0.7);
+    margin: 3px;
+    padding: 10px 0 10px 15px;
+}
+#banner p:first-child{
+    font-size: 1.9em;
+    font-weight: 100;
+    width: 285px;
+}
+#banner p:last-child{
+    font-family: MyAmbleBold;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+/*-----Стили для right_col-----*/
+#right_col{
+    float: right;
+    margin-right: 6px;
+}
+#right_col .separate{
+    width: 100%;
+    height: 4px;
+    background: rgb(130, 187, 223);
+    margin-top: 0;
+}
+#right_col #face{
+    border: solid 2px rgb(239, 241, 240);
+    margin-top: 48px;
+    width: 233px;
+    height: 485px;
+    background: url("images/user_face.png")	no-repeat;
+    border-radius: 4px;
+}
+#face p{
+    font-size: 1.5em;
+    font-weight: 900;
+    width: 150px;
+    margin-left: 38px;
+    margin-top: 24px;
+    text-align: center;
+    color: rgb(115, 115, 115);
+}
+#face a{
+    font-size: 0.9em;
+    text-align: center;
+    color: white;
+    display: block;
+    width: 130px;
+    height: 30px;
+    background: rgb(87, 176, 208);
+    margin-top: 288px;
+    margin-left: 50px;
+    padding-top: 14px;
+}
+#face a:hover{
+    font-weight: 600;
+}
+#face #loading {
+    border-top: solid 2px rgb(239, 241, 240);;
+    width: 100%;
+    height: 30px;
+    margin-top: 29px;
+}
+#face #loading div{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    background: rgb(117, 165, 48);
+    border-radius: 10px;
+}
+#face #loading div:first-child{
+    margin-left: 88px;
+    background: rgb(0, 148, 255);
+}
+#right_col #newsletters{
+    width: 233px;
+    height: 276px;
+    border: solid 2px rgb(239, 241, 240);
+    border-radius: 4px;
+    margin-top: 28px;
+}
+#newsletters p:first-of-type{
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 22px;
+    margin-bottom: 0;
+    text-align: center;
+    color: rgb(110, 110, 110);
+}
+#newsletters p:last-of-type{
+    width: 200px;
+    font-size: 0.9em;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(117, 117, 117);
+    margin-bottom: 0;
+    margin-left: 17px;
+}
+#newsletters #separate{
+    width: 90px;
+    height: 1px;
+    margin-left: 70px;
+    margin-top: 10px;
+    background: rgb(239, 241, 240);
+}
+#newsletters form{
+    margin-top: 5px;
+    width: 90%;
+    margin-left: 25px;
+}
+#newsletters input[type="text"]{
+    width: 180px;
+    height: 24px;
+    margin-top: 10px;
+    padding-left: 5px;
+    outline: none;
+    border: solid 1px rgb(220, 214, 210);
+}
+#newsletters input[type="submit"]{
+    width: 115px;
+    padding: 14px 25px 14px 25px;
+    background: rgb(128, 199, 24);
+    margin-top: 18px;
+    margin-left: 36px;
+    outline: none;
+    color: white;
+    font-size: 0.9em;
+    border: none;
+}
+#newsletters input[type="submit"]:hover{
+    font-style: italic;
+    font-weight: 600;
+}
+/*-----Стили для left_col-----*/
+#left_col{
+    float: left;
+    width: 790px;
+    margin-bottom: 50px;
+}
+#left_col > p:first-of-type{
+    margin-top: 43px;
+}
+#left_col > p{
+    font-weight: 900;
+    margin-left: 8px;
+}
+#staff_pick{
+    margin-top: 1100px;
+}
+#new_product{
+    margin-top: 390px;
+}
+#left_col p{
+    font-size: 1.5em;
+    margin-bottom: 2px;
+    color: rgb(92, 90, 90);
+}
+div#left_col div.featured_product, #left_col div.staff_product,#left_col div.new_product{
+    width: 237px;
+    height: 330px;
+    float: left;
+    margin: 12px;
+}
+div.product_information{
+    border: solid 2px rgb(238, 238, 238);
+    width: 233px;
+    height: 100px;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    margin-top: 222px;
+}
+#left_col .product_information p:first-of-type{
+    padding-top: 30px;
+    margin-left: 7px;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: rgb(109, 107, 107);
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+#left_col .product_information p:last-of-type{
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 1.1em;
+    color: rgb(154, 208, 106);
+    font-family: arial, helvetica, sans-serif;
+}
+.product_information span{
+    color: black;
+    font-size: 0.8em;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+a.basket{
+    width: 47px;
+    height: 47px;
+    background: url("images/small_basket.png") no-repeat;
+    border-radius: 30px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 28px;
+}
+a.basket:hover{
+    background: url("images/small_basket_hover.png") no-repeat;
+}
+div#product_1{
+    background: url("images/product_1.png") no-repeat;
+}
+div#product_2{
+    background: url("images/product_2.png") no-repeat;
+}
+div#product_3{
+    background: url("images/product_3.png") no-repeat;
+}
+div#product_4{
+    background: url("images/product_4.png") no-repeat;
+}
+div#product_5{
+    background: url("images/product_5.png") no-repeat;
+}
+div#product_6{
+    background: url("images/product_6.png") no-repeat;
+}
+div#product_7{
+    background: url("images/product_7.png") no-repeat;
+}
+div#product_8{
+    background: url("images/product_8.png") no-repeat;
+}
+div#product_9{
+    background: url("images/product_9 and staff_1.png") no-repeat;
+}
+div#staff_1{
+    background: url("images/product_9 and staff_1.png") no-repeat;
+}
+div#staff_2{
+    background: url("images/staff_2.png") no-repeat;
+}
+div#staff_3{
+    background: url("images/staff_3 and new_2.png") no-repeat;
+}
+div#new_1{
+    background: url("images/new_1.png") no-repeat;
+}
+div#new_2{
+    background: url("images/staff_3 and new_2.png") no-repeat;
+}
+div#new_3{
+    background: url("images/new_3.png") no-repeat;
+}
+/*-----Стили для footer-----*/
+#footer_top{
+    width: 100%;
+    height: 105px;
+    background: rgb(79, 178, 202);
+}
+#shipping, #call{
+    float: left;
+    width: 38.5%;
+    margin-right: 10px;
+    margin-left: 13.2%;
+    color: white;
+    font-size: 1.3em;
+    padding: 20px 0 15px 0;
+}
+footer #call{
+    margin-left: 0;
+}
+#shipping div, #call div{
+    width: 65px;
+    height: 65px;
+    margin-right: 19px;
+    border-radius: 35px;
+    float: left;
+}
+#shipping div{
+    background: url("images/delivery.png") no-repeat;
+}
+#call div{
+    background: url("images/telephone.png") no-repeat;
+}
+#footer_center{
+    padding-top: 25px;
+    width: 100%;
+    height: 315px;
+    background: rgb(61, 158, 181);
+}
+#footer_center h3{
+    font-weight: 100;
+}
+#footer_center ul{
+    margin-top: 27px;
+    padding-left: 0;
+}
+#footer_center li{
+    list-style: none;
+}
+#footer_center p{
+    font-size: 0.85em;
+}
+#facebook, #twitter, #information, #contact{
+    height: auto;
+    float: left;
+    margin-left: 3.5%;
+    color: white;
+}
+#facebook{
+    width: 240px;
+    margin-left: 13%;
+    clear: left;
+}
+#facebook h3{
+    margin-left: 5px;
+}
+#facebook p{
+    margin: 5px;
+}
+#facebook div{
+    width: 47px;
+    height: 23px;
+    background: url("images/lake.png") no-repeat;
+    margin: 2px 0 5px 5px;
+}
+#facebook table{
+    border-top: solid 1px rgb(84, 200, 226);
+    border-bottom: solid 1px rgb(84, 200, 226);
+    padding-bottom: 5px;
+}
+#facebook table td{
+    border: solid 3px rgb(76, 153, 208);
+}
+#facebook table td:hover{
+    border-color: rgb(12, 21, 186);
+}
+#facebook a{
+    display: block;
+    width: 49px;
+    height: 49px;
+}
+#facebook #user_1{
+    background: url("images/user_1.png") no-repeat;
+}
+#facebook #user_2{
+    background: url("images/user_2.png") no-repeat;
+}
+#facebook #user_3{
+    background: url("images/user_3.png") no-repeat;
+}
+#facebook #user_4{
+    background: url("images/user_4.png") no-repeat;
+}
+#facebook #user_5{
+    background: url("images/user_5.png") no-repeat;
+}
+#facebook #user_6{
+    background: url("images/user_6.png") no-repeat;
+}
+#facebook #user_7{
+    background: url("images/user_7.png") no-repeat;
+}
+#facebook #user_8{
+    background: url("images/user_8.png") no-repeat;
+}
+#twitter{
+    width: 230px;
+}
+#twitter div{
+    width: 43px;
+    height: 43px;
+    background: url("images/twitter.png") no-repeat;
+    float: left;
+    border-radius: 25px;
+}
+#twitter p{
+    margin-left: 55px;
+    line-height: 1.5em;
+    margin-top: 25px;
+}
+#twitter span{
+    color: rgb(150, 222, 222);
+}
+#information{
+    width: 200px;
+}
+#information div{
+    width: 6px;
+    height: 9px;
+    background: url("images/mark.png") no-repeat;
+    float: left;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+#information p {
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+#contact{
+    width: 200px;
+}
+#contact ul:first-of-type{
+    border-bottom: solid 1px #3FB4C1;
+    padding-bottom: 11px;
+}
+#contact ul:last-of-type{
+    margin-top: 18px;
+}
+#contact li{
+    font-size: 0.85em;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+#contact ul:last-of-type li{
+    float: left;
+    margin-top: 0;
+    margin-left: 10px;
+}
+#contact ul:last-of-type li:first-of-type{
+    margin-left: 0;
+}
+#contact a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+}
+#contact #google a{
+    background: url("images/google.png") no-repeat;
+}
+#contact #in a{
+    background: url("images/in.png") no-repeat;
+}
+#contact #social a{
+    background: url("images/social.png") no-repeat;
+}
+#contact #face_book a{
+    background: url("images/face_book.png") no-repeat;
+}
+#contact #google a:hover{
+    background: url("images/google_hover.png") no-repeat;
+}
+#contact #in a:hover{
+    background: url("images/in_hover.png") no-repeat;
+}
+#contact #social a:hover{
+    background: url("images/social_hover.png") no-repeat;
+}
+#contact #face_book a:hover{
+    background: url("images/face_book_hover.png") no-repeat;
+}
+#footer_bottom{
+    width: 100%;
+    height: 63px;
+    background: rgb(58, 98, 113);
+    color: rgb(109, 229, 239);
+    font-size: 0.9em;
+}
+#footer_bottom p{
+    float: left;
+    margin-top: 0;
+    margin-left: 13%;
+    padding-top: 20px;
+}
+#footer_bottom ul{
+    float: right;
+    margin-right: 13%;
+    margin-top: 20px;
+}
+#footer_bottom li{
+    display: block;
+    height: 13px;
+    float: left;
+    padding: 0 13px 0 13px;
+    border-left: solid 1px rgb(109, 199, 239);
+}
+#footer_bottom li:first-of-type{
+    border: none;
+}
+#footer_bottom a{
+    display: block;
+    margin-top: -2px;
+    color: rgb(109, 229, 239);
+}
